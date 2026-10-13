@@ -1,13 +1,14 @@
 repository:
   name: skills
   description: A secure and validated skills registry for professional AI coding agents. Extend Claude Code, Codex, Copilot, and more with complete confidence.
+  homepage: https://skills.sh
   topics: agent-skills, ai-agents
   private: false
   has_issues: false
   has_projects: false
   has_wiki: false
   has_downloads: true
-  default_branch: develop
+  default_branch: master
   allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: false
@@ -25,7 +26,7 @@ labels:
     description: Changes guides, examples, or project documentation.
 
 branches:
-  - name: develop
+  - name: master
     protection:
       required_pull_request_reviews:
         required_approving_review_count: 0
