@@ -8,7 +8,7 @@ repository:
   has_projects: false
   has_wiki: false
   has_downloads: true
-  default_branch: next
+  default_branch: master
   allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: false
@@ -26,7 +26,7 @@ labels:
     description: Changes guides, examples, or project documentation.
 
 branches:
-  - name: next
+  - name: master
     protection:
       required_pull_request_reviews:
         required_approving_review_count: 0
