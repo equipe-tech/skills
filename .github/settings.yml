@@ -1,14 +1,13 @@
-# Applied by the Repository Settings GitHub App after merging into master.
 repository:
   name: skills
-  description: Skills for AI coding agents maintained by Equipe Tech, including CI diagnosis and monitoring.
-  topics: agent-skills, ai-agents, developer-tools, continuous-integration, github-actions
+  description: A secure and validated skills registry for professional AI coding agents. Extend Claude Code, Codex, Copilot, and more with complete confidence.
+  topics: agent-skills, ai-agents
   private: false
-  has_issues: true
+  has_issues: false
   has_projects: false
   has_wiki: false
   has_downloads: true
-  default_branch: master
+  default_branch: develop
   allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: false
@@ -21,47 +20,18 @@ repository:
   enable_vulnerability_alerts: true
 
 labels:
-  - name: bug
-    color: '#B60205'
-    description: Fixes incorrect skill behavior or a regression.
-
-  - name: enhancement
-    color: '#A2EEEF'
-    description: Adds a new capability or improves an existing skill.
-
-  - name: skills
-    color: '#1D76DB'
-    description: Adds or changes agent skills and their instructions.
-
   - name: documentation
     color: '#0075CA'
     description: Changes guides, examples, or project documentation.
 
-  - name: ci
-    color: '#D4C5F9'
-    description: Changes CI configuration or validation tooling.
-
-  - name: dependencies
-    color: '#0366D6'
-    description: Updates tooling or workflow dependencies.
-
-  - name: github-actions
-    color: '#2088FF'
-    description: Updates GitHub Actions workflows or dependencies.
-
-  - name: release
-    color: '#FBCA04'
-    description: Changes versioning, publishing, or release automation.
-
 branches:
-  - name: master
+  - name: develop
     protection:
       required_pull_request_reviews:
         required_approving_review_count: 0
         dismiss_stale_reviews: false
         require_code_owner_reviews: false
         dismissal_restrictions: {}
-      # No CI workflow exists yet; add required checks when one is available.
       required_status_checks: null
       enforce_admins: true
       required_linear_history: true
